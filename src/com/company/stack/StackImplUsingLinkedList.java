@@ -32,7 +32,7 @@ public class StackImplUsingLinkedList {
     }
 
     public int pop(){
-        int popped = Integer.MIN_VALUE;
+        int popped;
         try {
             checkForUnderFlow();
         }catch (StackException ex){

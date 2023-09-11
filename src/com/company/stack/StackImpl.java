@@ -11,11 +11,13 @@ public class StackImpl {
         stack.push(2);
         stack.pop();
         stack.pop();
-        stack.pop();
+//        stack.pop();
 
         StackImplUsingLinkedList stackUsingLinkedList = new StackImplUsingLinkedList();
         stackUsingLinkedList.push(23);
         stackUsingLinkedList.push(32);
+        stackUsingLinkedList.pop();
+        stackUsingLinkedList.pop();
         stackUsingLinkedList.pop();
     }
 }
