@@ -19,15 +19,15 @@ public class SumInAMatrix {
     private static int matrixSum(int[][] nums) {
         int ans = 0;
         int k = nums.length;
-        for (int i = 0; i < nums.length; i++) {
-            Arrays.sort(nums[i]);
+        for (int[] ints : nums) {
+            Arrays.sort(ints);
         }
         for (int i = 0; i < nums[0].length; i++) {
-            PriorityQueue<Integer> maxHeaap = new PriorityQueue<>((a,b)-> b-a);
-            for (int j = 0; j < nums.length; j++) {
-                maxHeaap.add(nums[j][i]);
+            PriorityQueue<Integer> maxHeap = new PriorityQueue<>((a,b)-> b-a);
+            for (int[] num : nums) {
+                maxHeap.add(num[i]);
             }
-            ans += maxHeaap.poll();
+            ans += maxHeap.poll();
         }
 
         return ans;
