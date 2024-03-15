@@ -5,16 +5,16 @@ import java.util.List;
 
 public class MaximumTwinSumOfALinkedList {
     public static void main(String[] args) {
-        LinkedList.ListNode head = new LinkedList.ListNode(5);
-        head.next = new LinkedList.ListNode(4);
-        head.next.next = new LinkedList.ListNode(2);
-        head.next.next.next = new LinkedList.ListNode(1);
+        ListNode head = new ListNode(5);
+        head.next = new ListNode(4);
+        head.next.next = new ListNode(2);
+        head.next.next.next = new ListNode(1);
 
         int ans = pairSum(head);
         System.out.println(ans);
     }
 
-    private static int pairSum(LinkedList.ListNode head) {
+    private static int pairSum(ListNode head) {
         List<Integer> list = new ArrayList<>();
 
         while (head != null) {
