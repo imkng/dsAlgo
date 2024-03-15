@@ -2,13 +2,13 @@ package com.company.linkedList;
 
 public class ReverseLinkedListII {
     public static void main(String[] args) {
-        LinkedList.ListNode head = new LinkedList.ListNode(1);
-        head.next = new LinkedList.ListNode(2);
-        head.next.next = new LinkedList.ListNode(3);
-        head.next.next.next = new LinkedList.ListNode(4);
-        head.next.next.next.next = new LinkedList.ListNode(5);
+        ListNode head = new ListNode(1);
+        head.next = new ListNode(2);
+        head.next.next = new ListNode(3);
+        head.next.next.next = new ListNode(4);
+        head.next.next.next.next = new ListNode(5);
 
-        LinkedList.ListNode temp = head;
+        ListNode temp = head;
 
         System.out.println("Before reverse: ");
         while (temp != null) {
@@ -16,7 +16,7 @@ public class ReverseLinkedListII {
             temp = temp.next;
         }
 
-        LinkedList.ListNode ans = reverseBetween(head, 2, 4);
+        ListNode ans = reverseBetween(head, 2, 4);
         System.out.println("After reverse: ");
         while (ans != null) {
             System.out.print(ans.val + " -> ");
@@ -25,22 +25,22 @@ public class ReverseLinkedListII {
 
     }
 
-    private static LinkedList.ListNode reverseBetween(LinkedList.ListNode head, int left, int right) {
-        LinkedList.ListNode dummy = new LinkedList.ListNode(-1);
+    private static ListNode reverseBetween(ListNode head, int left, int right) {
+        ListNode dummy = new ListNode(-1);
         dummy.next = head;
-        LinkedList.ListNode it = dummy;
-        LinkedList.ListNode prevIt = null;
+        ListNode it = dummy;
+        ListNode prevIt = null;
 
         for (int i = 0; i < left; i++) {
             prevIt = it;
             it = it.next;
         }
 
-        LinkedList.ListNode itR = it;
-        LinkedList.ListNode prevItR = prevIt;
+        ListNode itR = it;
+        ListNode prevItR = prevIt;
 
         for (int i = left; i <= right; i++) {
-            LinkedList.ListNode forward = itR.next;
+            ListNode forward = itR.next;
             itR.next = prevItR;
             prevItR = itR;
             itR = forward;

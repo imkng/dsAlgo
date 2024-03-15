@@ -63,14 +63,13 @@ public class TopKFrequentWords {
                 map.put(str, 1);
             }
         }
-        PriorityQueue<Pair> minHeap = new PriorityQueue<>(new Comparator<Pair>(){
-            public int compare(Pair a, Pair b){
+        PriorityQueue<Pair> minHeap = new PriorityQueue<>(( a,  b)->{
                 if(a.getCount()==b.getCount()){
                     return a.getWord().compareTo(b.getWord());
                 }
                 return a.getCount() - b.getCount();
             }
-        });
+        );
         for (Map.Entry<String, Integer> mp : map.entrySet()){
             minHeap.add(new Pair(mp.getValue(), mp.getKey()));
             if (minHeap.size()>k){
