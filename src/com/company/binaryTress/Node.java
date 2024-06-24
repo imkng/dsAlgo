@@ -19,8 +19,6 @@ public class Node {
         root.left.right = new Node(6);
         root.left.left.left = new Node(7);
         root.left.left.right = new Node(8);
-
-
 //
 
         List<Integer> path = pathFormRootToNode(root, 8);
