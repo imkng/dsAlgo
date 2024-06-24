@@ -20,7 +20,6 @@ public class Node {
         root.left.left.left = new Node(7);
         root.left.left.right = new Node(8);
 //
-
         List<Integer> path = pathFormRootToNode(root, 8);
         System.out.println(path);
         System.out.println("====================");
