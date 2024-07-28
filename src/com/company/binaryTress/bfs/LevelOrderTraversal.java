@@ -1,4 +1,6 @@
-package com.company.binaryTress;
+package com.company.binaryTress.bfs;
+
+import com.company.binaryTress.Node;
 
 import java.util.ArrayList;
 import java.util.LinkedList;

@@ -5,10 +5,10 @@ import java.util.Map;
 
 public class LongestSubstringWithoutRepeatingCharacters {
 
-    //static String s = "abcabcbb";
+    static String s = "abcabcbb";
     // static String s = "bbbbb";
     //static String s = "pwwkew";
-    static String s = "au";
+    //static String s = "au";
     public static void main(String[] args) {
         int ans = lengthOfLongestSubstring(s);
         System.out.println(ans);

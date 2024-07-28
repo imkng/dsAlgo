@@ -4,14 +4,20 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class Node {
-    Node left, right;
-    int data;
-    Node(int data){
+    public Node left;
+    public Node right;
+    public int data;
+
+    public Node() {
+    }
+
+    public Node(int data){
         this.data = data;
         left = right = null;
     }
 
-    public static void main(String[] args) {
+    public static Node BinaryTree(){
+
         Node root = new Node(2);
         root.left = new Node(3);
         root.right = new Node(4);
@@ -19,30 +25,20 @@ public class Node {
         root.left.right = new Node(6);
         root.left.left.left = new Node(7);
         root.left.left.right = new Node(8);
-//
+
+        return root;
+    }
+
+    public static void main(String[] args) {
+        Node root = BinaryTree();
         List<Integer> path = pathFormRootToNode(root, 8);
         System.out.println(path);
         System.out.println("====================");
 
-        Node ans = lowestCommonAncestor(root, 7, 8);
-        System.out.println(ans.data);
+
     }
 
-    private static Node lowestCommonAncestor(Node root, int a, int b) {
-        if (root == null || root.data == a || root.data == b){
-            return root;
-        }
-        Node left = lowestCommonAncestor(root.left, a, b);
-        Node right = lowestCommonAncestor(root.right, a, b);
 
-        if (left == null){
-            return right;
-        } else if (right == null) {
-            return left;
-        }else {
-            return root;
-        }
-    }
 
     private static List<Integer> pathFormRootToNode(Node root, int i) {
         List<Integer> ans = new ArrayList<>();
