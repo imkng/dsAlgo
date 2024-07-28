@@ -17,6 +17,13 @@ public class Node {
     }
 
     public static Node BinaryTree(){
+        //   2
+        //  / \
+//         3    4
+//        / \
+//      5     6
+//     / \
+//    7   8
 
         Node root = new Node(2);
         root.left = new Node(3);
