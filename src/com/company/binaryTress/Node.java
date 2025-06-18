@@ -16,6 +16,13 @@ public class Node {
         left = right = null;
     }
 
+    public static Node BalancedBinaryTree(){
+        Node root = new Node(2);
+        root.left = new Node(3);
+        root.right = new Node(4);
+        return root;
+    }
+
     public static Node BinaryTree(){
         //   2
         //  / \

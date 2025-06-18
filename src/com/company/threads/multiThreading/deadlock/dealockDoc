@@ -1,0 +1,2 @@
+DeadLock:- is a situation in multithreading where two or more threads are blocked forever, waiting for each other to release
+lock. circular dependencies.

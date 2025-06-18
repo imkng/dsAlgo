@@ -1,9 +1,6 @@
 package com.company.slidingWindows;
 
-import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
+import java.util.*;
 
 public class FindAllAnagramsInAString {
     static String  s = "cbaebabacd", p = "abc";
@@ -21,11 +18,13 @@ public class FindAllAnagramsInAString {
         }
         int count = map.size();
         int i = 0, j = 0, k = p.length();
-        StringBuilder stringBuilder = new StringBuilder("");
+//        StringBuilder stringBuilder = new StringBuilder("");
+        Queue<Character> list = new LinkedList<>();
         while (j < s.length()){
             if (map.containsKey(s.charAt(j))){
                 int temp = map.get(s.charAt(j));
                 map.put(s.charAt(j), --temp);
+                list.add(s.charAt(j));
                 if(map.get(s.charAt(j)) == 0){
                     count--;
                 }
@@ -36,9 +35,11 @@ public class FindAllAnagramsInAString {
                 if(count == 0){
                     ans.add(i);
                 }
-                if (map.get(s.charAt(i)) == 0){
-                    map.put(s.charAt(i), map.getOrDefault(s.charAt(i), 0) + 1);
-                    count++;
+                if (map.containsKey(s.charAt(i))) {
+                        map.put(s.charAt(i), map.getOrDefault(s.charAt(i), 0) + 1);
+                    if (map.get(s.charAt(i)) == 1) {
+                        count++;
+                    }
                 }
                 i++;
                 j++;

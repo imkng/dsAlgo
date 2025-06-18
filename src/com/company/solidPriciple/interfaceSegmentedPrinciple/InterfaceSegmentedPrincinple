@@ -1,0 +1,2 @@
+1. Interfaces should be such that, the client should not be implement unnescessary functions which  they do't
+need.

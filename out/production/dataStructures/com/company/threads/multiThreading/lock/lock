@@ -1,0 +1,9 @@
+1. Intrinsic:- these are build in every object. eg synchronized
+2. Explicit:- more advanced lock which you can controll by yourself using Lock form java.util.concurrent.lock
+
+Lock lock = new [ImplementedClass]
+
+1. lock.lock() -> Thread continuously trying to accuires the lock. if lock availavle then it will go in cs
+1. lock.tryLock(millisecond: 5000) -> Acquires the lock if it is free within the given waiting time
+                                        and the current thread has not been interrupted.
+1. lock.unLock() -> current thread will unlock the lock

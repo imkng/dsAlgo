@@ -1,10 +1,10 @@
 package com.company.slidingWindows;
 
 public class CountNumberOfNiceSubarrays {
-    // static int[] nums = {1,1,2,1,1};
-    // static int k = 3;
-    static int[] nums = {2,2,2,1,2,2,1,2,2,2};
-    static int k = 2;
+     static int[] nums = {1,1,2,1,1};
+     static int k = 3;
+//    static int[] nums = {2,2,2,1,2,2,1,2,2,2};
+//    static int k = 2;
     public static void main(String[] args) {
         int ans = numberOfSubarrays(nums, k);
         System.out.println(ans);

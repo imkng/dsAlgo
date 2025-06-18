@@ -4,11 +4,11 @@ import java.util.HashMap;
 import java.util.Map;
 
 public class CountOccurrencesOfAnagrams {
-    //static String str = "aabaabaa";
-    //static String ptr = "aaba";
+    static String str = "aabaabaa";
+    static String ptr = "aaba";
 
-    static String str = "eaylnlfdxf";
-    static String ptr = "irc";
+//    static String str = "eaylnlfdxf";
+//    static String ptr = "irc";
 
     public static void main(String[] args) {
         int ans = countOccurrencesOfAnagrams(str, ptr);
