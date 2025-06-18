@@ -26,6 +26,22 @@ public class CeilInBST {
         return (ceil >= input) ? ceil : node.data;
     }
 
+    int ceilNotRecursive(Node root, int input){
+        int ceil = -1;
+        while (root != null){
+            if (root.data == input){
+                return root.data;
+            }
+            if (input < root.data){
+                ceil = root.data;
+                root= root.left;
+            }else {
+                root = root.right;
+            }
+        }
+        return ceil;
+    }
+
     public static void main(String[] args) {
         CeilInBST ceilInBST = new CeilInBST();
         Node root = new Node(8);
@@ -39,6 +55,7 @@ public class CeilInBST {
         root.right.right = new Node(14);
 
         System.out.println("Ceil of 3 is: " + ceilInBST.ceilIn(root, 3));
+        System.out.println("Ceil of 3 is: " + ceilInBST.ceilNotRecursive(root, 3));
 
     }
 }

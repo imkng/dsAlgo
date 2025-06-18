@@ -5,6 +5,27 @@ import java.util.Scanner;
 public class BinaryTree {
     Node root;
 
+    public BinaryTree() {
+        this.root = null;
+    }
+
+    public void insertInBT(int value){
+        root = insertRecusively(root, value);
+    }
+
+    private Node insertRecusively(Node root, int value) {
+        if (root == null){
+            root = new Node(value);
+            return root;
+        }
+        if (root.data > value){
+            root.left =  insertRecusively(root.left, value);
+        }else {
+            root.right = insertRecusively(root.right, value);
+        }
+        return root;
+    }
+
     public void populate(Scanner scanner){
         System.out.println("Enter root Node");
         int value = scanner.nextInt();
@@ -29,6 +50,10 @@ public class BinaryTree {
         }
     }
 
+    public Node getRoot() {
+        return root;
+    }
+
     public void display(){
         display(root, "");
     }
@@ -43,7 +68,13 @@ public class BinaryTree {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         BinaryTree bt = new BinaryTree();
-        bt.populate(scanner);
+//        bt.populate(scanner);
+//        bt.display();
+
+        bt.insertInBT(12);
+        bt.insertInBT(13);
+        bt.insertInBT(11);
+        bt.insertInBT(10);
         bt.display();
     }
 }

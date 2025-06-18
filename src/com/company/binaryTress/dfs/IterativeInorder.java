@@ -9,9 +9,16 @@ import java.util.Stack;
 public class IterativeInorder {
     public static void main(String[] args) {
         // left root right;
-        List<Integer> inorder = inOrder(Node.BinaryTree());
+        List<Integer> inorder = inOrderWay(Node.BinaryTree());
         for (int ele :
                 inorder) {
+            System.out.println(ele);
+        }
+        System.out.println("===========================");
+
+        List<Integer> inorder1 = inOrder(Node.BinaryTree());
+        for (int ele :
+                inorder1) {
             System.out.println(ele);
         }
     }
@@ -37,6 +44,22 @@ public class IterativeInorder {
             }
 
         }
+        return ans;
+    }
+    private static List<Integer> inOrderWay(Node root){
+        List<Integer> ans = new ArrayList<>();
+        Stack<Node> stack = new Stack<>();
+        stack.push(root);
+        Node current = root;
+       while (!stack.isEmpty()){
+           while (current != null){
+               stack.push(current);
+               current = current.left;
+           }
+           current = stack.pop();
+           ans.add(current.data);
+           current = current.right;
+       }
         return ans;
     }
 }
