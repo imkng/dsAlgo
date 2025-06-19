@@ -4,6 +4,8 @@ import java.util.ArrayList;
 
 public class LinkedList {
 
+    ListNode head;
+
     static ListNode insertElement(ListNode root, int first, int second){
         ListNode firstNode = new ListNode(first);
 
@@ -71,4 +73,25 @@ public class LinkedList {
 
         return root;
     }
+
+    public LinkedList() {
+        this.head = null;
+    }
+
+    public void append(int value){
+        insertInLinkedList(head, value);
+    }
+
+    private void insertInLinkedList(ListNode head, int value) {
+        if (head == null){
+            head =  new ListNode(value);
+            return;
+        }
+        ListNode temp = head;
+        while (temp != null){
+            temp = temp.next;
+        }
+        temp.next = new ListNode(value);
+    }
+
 }

@@ -1,0 +1,11 @@
+A generic type is a class or interface that is parameterized over types.
+For example, a generic class can work with any type specified by the user, and
+that type can be enforced at compile time.
+
+class ClassName<T> { Where T is the type parameter
+    // Class body
+}
+
+
+So, In simpler terms, generics allow you to write code that can work with any object type
+while ensuring type safety at compile time.

@@ -18,7 +18,7 @@ public class IterativePreOrder {
     private static List<Integer> preOrder(Node root) {
         List<Integer> ans = new ArrayList<>();
         if (root == null) return ans;
-
+        // so In stack we will add element in first right, left
         Stack<Node> stack = new Stack<>();
         stack.add(root);
 

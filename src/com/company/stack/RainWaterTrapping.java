@@ -21,6 +21,8 @@ public class RainWaterTrapping {
         for (int i = arr.length-2; i >= 0 ; i--) {
             maxRight[i] = Math.max(maxRight[i+1], arr[i]);
         }
+        printArr(maxLeft);
+        printArr(maxRight);
         int[] water = new int[arr.length];
         for (int i = 0; i < arr.length; i++) {
             water[i] = Math.min(maxLeft[i], maxRight[i]) - arr[i];
@@ -30,5 +32,12 @@ public class RainWaterTrapping {
             trap += water[i];
         }
         return trap;
+    }
+
+    private static void printArr(int[] left) {
+        for (Integer element : left) {
+            System.out.print(element + " ");
+        }
+        System.out.println();
     }
 }

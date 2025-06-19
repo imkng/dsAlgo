@@ -4,10 +4,10 @@ public class SubArraySumEqualsK {
     //static int[] nums = {1,1,1};
     //static int k = 2;
 
-    //static int[] nums = {1,2,3};
-    //static int k = 3;
-    static int[] nums = {1};
-    static int k = 0;
+    static int[] nums = {1,2,3};
+    static int k = 3;
+//    static int[] nums = {1};
+//    static int k = 0;
     public static void main(String[] args) {
         int ans = findSubsetSumOfk(nums, k);
         System.out.println(ans);

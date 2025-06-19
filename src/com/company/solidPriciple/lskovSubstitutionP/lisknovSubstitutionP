@@ -1,0 +1,3 @@
+. If an class B is subtype of class A, then we should be able to replace A with B without breaking the
+behaviour of program
+// subclass should extend the capability of of its parent not narrow it down
