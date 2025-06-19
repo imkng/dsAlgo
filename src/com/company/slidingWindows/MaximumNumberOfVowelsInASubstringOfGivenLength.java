@@ -31,7 +31,7 @@ public class MaximumNumberOfVowelsInASubstringOfGivenLength {
                 j++;
             }else if (j-i+1 == k){
                 ans = Math.max(ans, queue.size());
-                if (queue.peek() == s.charAt(i)){
+                if (!queue.isEmpty() && queue.peek() == s.charAt(i)){
                     queue.poll();
                 }
                 i++;

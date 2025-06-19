@@ -17,7 +17,7 @@ public class FirstNegativeInEveryWindowOfSizeK {
     }
 
     private static List<Integer> firstNegativeInEveryWindowOfSizeK(int[] a, int k) {
-        List<Integer> temp = new ArrayList<>();
+        List<Integer> ans = new ArrayList<>();
         Queue<Integer> list = new LinkedList<>();
         int i = 0, j = 0;
         while (j < a.length) {
@@ -28,9 +28,9 @@ public class FirstNegativeInEveryWindowOfSizeK {
                 j++;
             } else if (j - i + 1 == k) {
                 if (list.isEmpty()) {
-                    temp.add(0);
+                    ans.add(0);
                 } else {
-                    temp.add(list.peek());
+                    ans.add(list.peek());
                     if (a[i] == list.peek()) {
                         list.poll();
                     }
@@ -39,6 +39,6 @@ public class FirstNegativeInEveryWindowOfSizeK {
                 j++;
             }
         }
-        return temp;
+        return ans;
     }
 }
