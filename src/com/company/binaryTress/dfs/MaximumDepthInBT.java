@@ -12,7 +12,7 @@ public class MaximumDepthInBT {
     public static int maxDepth(Node node) {
         if (node == null) return 0;
         int lh = maxDepth(node.left);
-        int rh = maxDepth(node.left);
+        int rh = maxDepth(node.right);
         return 1 + Math.max(lh, rh);
     }
 }

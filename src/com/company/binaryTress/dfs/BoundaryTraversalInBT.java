@@ -13,7 +13,7 @@ public class BoundaryTraversalInBT {
            }
         //traverse left
         traverseLeft(root, ans);
-        //traverseLeaf
+        //traverseLeaf -> inorder
         traverseLeaf(root, ans);
         // traverseRight
         traverseRight(root, ans);

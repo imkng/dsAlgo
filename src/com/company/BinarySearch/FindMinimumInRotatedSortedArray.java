@@ -25,6 +25,7 @@ public class FindMinimumInRotatedSortedArray {
             if (arr[start] <= arr[mid] && arr[mid] <= arr[end]) {
                 return start;
             }
+            // need to move toward unsorted arr
             if (arr[start] <= arr[mid]) {
                 start = mid + 1;
             } else if (arr[mid] <= arr[end]) {
