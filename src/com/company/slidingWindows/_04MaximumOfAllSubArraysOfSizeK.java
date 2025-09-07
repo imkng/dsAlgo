@@ -2,7 +2,7 @@ package com.company.slidingWindows;
 
 import java.util.*;
 
-public class MaximumOfAllSubArraysOfSizeK {
+public class _04MaximumOfAllSubArraysOfSizeK {
     //static int[] arr = {1, 3, -1, -3, 5, 3, 6, 7};
     //static int k = 3;
 

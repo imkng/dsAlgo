@@ -5,7 +5,7 @@ import java.util.LinkedList;
 import java.util.List;
 import java.util.Queue;
 
-public class FirstNegativeInEveryWindowOfSizeK {
+public class _02FirstNegativeInEveryWindowOfSizeK {
     static int[] A = {12, -1, -7, 8, -15, 30, 16, 28};
     static int k = 3;
 

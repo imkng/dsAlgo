@@ -1,6 +1,6 @@
 package com.company.slidingWindows;
 
-public class MaximumSumSubArrayOfSizeK {
+public class _01MaximumSumSubArrayOfSizeK {
     static int[] arr = {1,5,4,2,9};
     static int k = 3;
 

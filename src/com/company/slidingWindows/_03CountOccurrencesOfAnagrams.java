@@ -3,7 +3,7 @@ package com.company.slidingWindows;
 import java.util.HashMap;
 import java.util.Map;
 
-public class CountOccurrencesOfAnagrams {
+public class _03CountOccurrencesOfAnagrams {
     static String str = "aabaabaa";
     static String ptr = "aaba";
 

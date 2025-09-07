@@ -3,7 +3,7 @@ package com.company.heap;
 import java.util.Collections;
 import java.util.PriorityQueue;
 
-public class KthSmallestElement {
+public class KthSmallestElement01 {
     static int[] arr = {7, 10, 4, 3, 20, 15};
     static int k = 3;
 
