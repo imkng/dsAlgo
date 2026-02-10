@@ -1,6 +1,6 @@
 package com.company.BinarySearch;
 
-public class BinarySearchInReverseSortedArray {
+public class _01BinarySearchInReverseSortedArray {
     static int[] arr = new int[]{12, 10, 8, 6, 4, 2, 1};
 
     //output: 6 if targeted: 1;

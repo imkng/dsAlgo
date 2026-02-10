@@ -1,6 +1,6 @@
 package com.company.BinarySearch;
 
-public class SearchInRotatedSortedArrayII {
+public class _06SearchInRotatedSortedArrayII {
     static int[] arr = new int[]{2,2,2,3,2,2,2};
 
     public static void main(String[] args) {
