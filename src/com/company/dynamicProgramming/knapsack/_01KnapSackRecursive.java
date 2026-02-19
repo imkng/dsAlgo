@@ -1,6 +1,6 @@
 package com.company.dynamicProgramming.knapsack;
 
-public class KnapSackRecursive {
+public class _01KnapSackRecursive {
     int[] wt = {1, 3, 4, 5};
     int[] val = {1, 4, 5, 7};
 
