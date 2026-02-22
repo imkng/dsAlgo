@@ -1,6 +1,6 @@
 package com.company.dynamicProgramming.knapsack;
 
-public class TopDownApproach {
+public class _03TopDownApproach {
     static int[] wt = {1, 3, 4, 5};
     static int[] val = {1, 4, 5, 7};
     //knapsack_weight

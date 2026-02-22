@@ -1,6 +1,6 @@
 package com.company.dynamicProgramming.knapsack;
 
-public class SubSetSum {
+public class _04SubSetSum {
     static int[] arr = {2, 8, 7, 3, 10};
     static int sum = 11;
     public static void main(String[] args) {
