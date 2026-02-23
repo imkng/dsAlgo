@@ -1,6 +1,6 @@
 package com.company.dynamicProgramming.knapsack;
 
-public class CountSubsetWithAGivenSum {
+public class _06CountSubsetWithAGivenSum {
 
     static int[] arr = {2, 3, 5, 6, 7, 8, 10};
     static int sum = 10;

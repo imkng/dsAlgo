@@ -2,7 +2,21 @@ package com.company.dynamicProgramming.knapsack;
 
 import java.util.Arrays;
 
-public class MinimumSubsetSumDifference {
+public class _07MinimumSubsetSumDifference {
+    //    Given an array arr[]  containing non-negative integers, the task is to divide it into
+//    two sets set1 and set2 such that the absolute difference between their sums is minimum and
+//    find the minimum difference.
+//
+//    Examples:
+//
+//    Input: arr[] = [1, 6, 11, 5]
+//    Output: 1
+//    Explanation:
+//    Subset1 = {1, 5, 6}, sum of Subset1 = 12
+//    Subset2 = {11}, sum of Subset2 = 11
+//    Hence, minimum difference is 1.
+
+
     static int[] arr =  {1, 6, 11, 5};
 
     public static void main(String[] args) {
