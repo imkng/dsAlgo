@@ -1,6 +1,6 @@
 package com.company.dynamicProgramming.knapsack;
 
-public class CountTheNumberOfSubsetWithAGivenDifference {
+public class _09CountTheNumberOfSubsetWithAGivenDifference {
     // static int[] arr = {1, 1, 2, 3};
     // static int diff = 1;
     // static int[] arr = {1};

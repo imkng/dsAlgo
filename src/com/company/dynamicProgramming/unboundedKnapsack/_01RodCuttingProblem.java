@@ -1,6 +1,6 @@
 package com.company.dynamicProgramming.unboundedKnapsack;
 
-public class RodCuttingProblem {
+public class _01RodCuttingProblem {
     static int[] lengthSize = {1,2,3,4,5,6,7,8};
 
     static int lengthOfRod = 8;
