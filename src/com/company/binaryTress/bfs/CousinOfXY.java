@@ -11,6 +11,7 @@ public class CousinOfXY {
         boolean foundY = false;
         if (root == null) return false;
         Queue<Node> queue = new LinkedList<>();
+        queue.add(root);
         while (!queue.isEmpty()){
             Node current = queue.poll();
             if (current.left.data == x && current.right.data == y ||
